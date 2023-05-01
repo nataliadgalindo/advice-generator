@@ -26,10 +26,10 @@ function App() {
         <p className="advice-id">Advice #{advice.id}</p>
         <h1 className="advice">"{advice.advice}"</h1>
         <div className="divider-img">
-          <img className="divider" src={dividerImg} alt="" />
+          <img className="divider" src={dividerImg} alt="divider" />
         </div>
         <button onClick={handleButtonClick} className="advice-btn">
-          <img src={dice} alt="" />
+          <img src={dice} alt="dice" />
         </button>
       </div>
     </main>

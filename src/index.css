@@ -29,10 +29,11 @@ body {
 
 .advice-box {
   background-color: var(--ark-grayish-blue);
-  max-width: 600px;
+  max-width: 550px;
   min-width: 320px;
   border-radius: 12px;
   margin: 1rem;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .advice-content {
@@ -50,7 +51,7 @@ body {
   bottom: -25px;
   background-color: var(--neon-green);
   border: none;
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 50%;
   cursor: pointer;
 }
