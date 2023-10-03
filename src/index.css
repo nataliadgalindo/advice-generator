@@ -115,7 +115,7 @@ body {
   .advice-box {
     margin: auto;
     padding: 2.75rem 1rem 2.5rem;
-    width: 70%;
+    max-width: 65%;
   }
 
   .advice-id {
@@ -142,7 +142,7 @@ body {
 
   .advice-box {
     padding: 2.75rem 1rem 2.5rem;
-    width: 60%;
+    max-width: 50%;
   }
 
   .advice-id {
@@ -164,7 +164,7 @@ body {
 
   .advice-box {
     padding: 3.5rem 1rem 3.5rem;
-    width: 45%;
+    max-width: 45%;
   }
 
   .advice-id {
