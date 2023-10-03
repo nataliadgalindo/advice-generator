@@ -20,35 +20,53 @@
 body {
   min-height: 100vh;
   background-color: var(--dark-blue);
+  text-align: center;
+}
+
+/* main content */
+
+.advice-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* main content */
-
 .advice-box {
   background-color: var(--ark-grayish-blue);
-  max-width: 550px;
-  min-width: 320px;
-  border-radius: 12px;
-  margin: 1rem;
+  border-radius: 8px;
+  margin: 0 1rem;
+  padding: 2.25rem 1rem 2rem;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
 }
 
-.advice-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
-  position: relative;
-  padding: 3rem 1rem;
+.advice-id {
+  color: var(--neon-green);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+
+.advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.divider {
+  width: 100%;
+  content: url("/images/pattern-divider-mobile.svg");
+  margin-bottom: 1.5rem;
 }
 
 .advice-btn {
   font-size: 0;
   position: absolute;
-  bottom: -25px;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--neon-green);
   border: none;
   padding: 1.25rem;
@@ -56,35 +74,118 @@ body {
   cursor: pointer;
 }
 
-.advice {
-  text-align: center;
-  color: hsl(193, 38%, 86%);
-  font-size: 28px;
-  padding: 0 1.5rem;
-}
-
-.advice-id {
-  color: var(--neon-green);
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.divider {
-  margin: 0.5rem 0 1.5rem;
-  width: 100%;
-}
-
 .advice-btn:hover {
   box-shadow: 0 0 30px var(--neon-green);
 }
 
-@media only screen and (max-width: 376px) {
-  .divider-img {
-    content: url("./images/pattern-divider-mobile.svg");
-    margin: 0 0 1rem;
+@media screen and (min-width: 375px) {
+  .advice {
+    font-size: 1.5rem;
+  }
+
+  .advice-id {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 572px) {
+  /* main content */
+
+  .advice-content {
+    margin: auto;
+    width: 90%;
   }
 
   .advice {
-    padding: 0;
+    margin: 1.5rem 0;
+  }
+
+  .divider {
+    content: url("/images/pattern-divider-desktop.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* main content */
+
+  .advice-content {
+    width: 95%;
+  }
+
+  .advice-box {
+    margin: auto;
+    padding: 2.75rem 1rem 2.5rem;
+    width: 70%;
+  }
+
+  .advice-id {
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+  }
+
+  .advice {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .divider {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* main content */
+
+  .advice-content {
+    width: 90%;
+  }
+
+  .advice-box {
+    padding: 2.75rem 1rem 2.5rem;
+    width: 60%;
+  }
+
+  .advice-id {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+  }
+
+  .advice {
+    font-size: 1.75rem;
+  }
+
+  .divider {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* main content */
+
+  .advice-box {
+    padding: 3.5rem 1rem 3.5rem;
+    width: 45%;
+  }
+
+  .advice-id {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  .advice {
+    font-size: 2rem;
+    margin: 2rem 0 2.5rem;
+  }
+
+  .divider {
+    margin-bottom: 2rem;
+  }
+
+  .advice-btn {
+    padding: 1.5rem;
+  }
+
+  .advice-btn img {
+    width: 32px;
   }
 }
